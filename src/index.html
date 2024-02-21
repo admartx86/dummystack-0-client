@@ -8,6 +8,24 @@
     <title>dummystack-0</title>
   </head>
   <body>
+    <form onSubmit="event.preventDefault(); makeGetRequest();">
+      <label for="get">GET</label>
+      <button id="get" type="submit">GET</button>
+    </form>
+    <form onSubmit="event.preventDefault(); makePostRequest();">
+      <label for="post">POST</label>
+      <input id="post" type="text"></input>
+      <button type="submit">POST</button>
+    </form>
+    <form onSubmit="event.preventDefault(); makePutRequest();">
+      <label for="put">PUT</label>
+      <input id="put" type="text"></input>
+      <button type="submit">PUT</button>
+    </form>
+    <form onSubmit="event.preventDefault(); makeDeleteRequest();">
+      <label for="delete">DELETE</label>
+      <button id="delete" type="submit">DELETE</button>
+    <div id="result"></div>
     <script src="./index.js"></script>
   </body>
 </html>
